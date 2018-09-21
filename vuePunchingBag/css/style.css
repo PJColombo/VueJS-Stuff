@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: solid 2px black; */
+}
+
+.bag img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.bag-health {
+    width: 300px;
+    margin: 0 auto;
+    border: solid 5px black;
+}
+
+.bag-health div {
+    /* background-color: rgb(240, 87, 87); */
+    height: 20px;
+    transition: width 0.5s;
+}

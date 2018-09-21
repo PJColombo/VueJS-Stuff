@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PunchBag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>My health: {{health}}</h1>
+        <div class="bag">
+            <img v-bind:src="showImage">
+        </div>
+
+        <div class="bag-health">
+            <div v-bind:style="{backgroundColor: health_bar_colors[hb_index], width: health + '%'}"></div>
+        </div>
+
+        <div class="controls">
+            <button v-on:click="punch" v-show="!ended">Punch</button>
+            <button v-on:click="restart">Restart</button>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
